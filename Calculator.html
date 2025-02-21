@@ -4,6 +4,13 @@
    <title>Calculator</title>
    <style>
 
+@font-face {
+    font-family: 'Digital-7 Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Digital-7 Regular'), url('digital-7.woff') format('woff');
+    }
+
 .body{
     background-color: #3d3d5c;
     height: 350px;
@@ -21,6 +28,42 @@
     font-size: 30px;
     margin: 20px auto;
     padding: 5px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    font-family: "Digital-7 Regular";
+}
+.btn{
+
+    text-align: center;
+    width: 60px;
+    padding: 2px 0;
+    font-size: 20px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.btn:hover{
+    box-shadow: 0 0 5px 0 white;
+    transition: 0.5s;
+}
+.button{
+
+    display: flex;
+    flex-direction: column;
+    height: 230px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.btn1{
+  
+    background-color: #ff6348;
+    height: 78px;
+    color: white;
 }
    </style>
 </head>
@@ -28,7 +71,30 @@
     <div Class="body">
 <input type="text" class="screen" value="0"/>
 
-<div>
+<div class="button">
+    <button class="btn">AC</button>
+    <button class="btn">7</button>
+    <button class="btn">4</button>
+    <button class="btn">1</button>
+    <button class="btn">0</button>
+
+    <button class="btn">M+</button>
+    <button class="btn">8</button>
+    <button class="btn">2</button>
+    <button class="btn">5</button>
+    <button class="btn">.</button>
+
+    <button class="btn">/</button>
+    <button class="btn">9</button>
+    <button class="btn">6</button>
+    <button class="btn">3</button>
+    <button class="btn">%</button>
+
+    <button class="btn">x</button>
+    <button class="btn">-</button>
+    <button class="btn">+</button>
+    <button class=" btn btn1">=</button>
+    
 
 
 </div>
